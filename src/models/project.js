@@ -8,6 +8,7 @@ const projectSchema = new Schema({
   name: String,
   link: String,
   repoLink: String,
+  chatLink: String,
   tech: String,
   partners: String,
   description: String,
