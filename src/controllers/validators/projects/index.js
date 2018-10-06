@@ -15,7 +15,7 @@ const postProject = celebrate({
     name: Joi.string().required(),
     description: Joi.string().required(),
     tech: Joi.string().required(),
-    link: Joi.string().uri({scheme: ['https']}),
+    link: Joi.string().allow('').uri({scheme: ['https']}),
     repoLink: Joi.string().regex(/^((git|ssh|http(s)?)|(git@[\w\.]+))(:(\/\/)?)([\w\.@\:\/\-~]+)(\.git)(\/)?$/).required(),
     partners: Joi.string().required(),
   }),
